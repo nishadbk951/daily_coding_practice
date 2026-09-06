@@ -1,0 +1,26 @@
+/* Animation using @keyframes */
+
+@keyframes movebox {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+/* Animated Box */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+    /* Animation Properties */
+
+    animation-name: moveBox;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

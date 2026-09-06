@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fitness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center text-4xl font-extrabold">
+        FITNESS CLUB
+    </header>
+    <div class="flex justify-center">
+        <img src="fitnesslogo.webp" alt="fitness logo" class="w-24 h-20 p-3">
+    </div>
+    <nav class="bg-red-900">
+        <div class="flex justify-end md:hidden">
+            <button id="menu-btn" class="text-white text-3xl">
+                ≣
+            </button> 
+        </div>
+        <ul class="hidden md:flex justify-end items-center gap-4 lg:gap-6 text-lg lg:text-xl text-white">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Programs">Programs</a></li>
+            <li><a href="#Membership">Membership</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+            <button class="bg-green-900 rounded-lg px-4 py-1 font-semibold hover:bg-orange-700">Join Now</button>
+            </li>
+        </ul>
+        <ul id="mobile-menu" class="hidden md:hidden flex flex-col gap-3 p-4 bg-red-900 text-white text-lg text-center">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Programs">Programs</a></li>
+            <li><a href="#Membership">Membership</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+                <button class="bg-orange-700 rounded-lg px-4 py-1 font-semibold w-full">Join Now</button>
+            </li>
+        </ul>
+    </nav>
+    <section id="Home" class="bg-[url('gym.jpg')] w-full h-96 bg-cover bg-center flex justify-center items-center">
+        <div class=" bg-black/50 p-6 rounded-xl text-center">
+            <h2 class="text-white text-4xl font-extrabold">FITNESS FOR LIFE</h2>
+            <h4 class="font-extrabold text-white">Build a stronger you</h4>
+            <button class="rounded-lg text-orange-700 font-semibold px-4 py-1 bg-blue-500">Get Started</button>
+        </div>
+    </section>
+    <section id="Programs" class="program-section">
+        <h2>Our Programs</h2>
+        <div class="program-container">
+            <div class="card">
+                <div class="program-image">
+                    <img src="fitness.training.jpg" alt="fitness program">
+                </div>
+                <div class="program-content bg-slate-400">
+                    <h3>Fitness Training</h3>
+                    <p>Improve Your Fitness and Strenght</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="program-image">
+                    <img src="yoga.jpg" alt="yoga program">
+                </div>
+                <div class="program-content bg-slate-400">
+                    <h3>Yoga</h3>
+                    <p>Improve flexibility and relaxation</p>
+                    <button class="mx-auto mt-auto">Learn More</button>
+                </div>
+            </div>
+
+            <div class="card flex flex-col h-full">
+                <div class="program-image">
+                    <img src="cardio.avif" alt="cardio program">
+                </div>
+                <div class="program-content bg-slate-400 flex flex-col flex grow">
+                    <h3>Cardio</h3>
+                    <p>Improve your stamina</p>
+                    <button class="mx-auto mt-auto">Learn More</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="program-image">
+                    <img src="strength trainer.jpg" alt="trainer program">
+                </div>
+                <div class="program-content bg-slate-400">
+                    <h3>Strength Training</h3>
+                    <p>Build strength with proper training</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Membership" class="py-12 px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Membership Plans
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    Basic
+                </h3>
+                <p class="text-3xl font-bold text-orange-500 my-4">
+                    999
+                </p>
+                <p class="text-gray-800 mb-6">
+                    Per Month
+                </p>
+                <button class="bg-orange-700 text-white px-5 py-1 rounded-lg">
+                    Join Now
+                </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center text-white">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    Standard
+                </h3>
+                <p class="text-3xl font-bold my-4 text-orange-500">
+                    1499
+                </p>
+
+                <p class="mb-6 text-gray-800">
+                    Per Month
+                </p>
+
+                <button class="bg-orange-700 text-white px-5 py-1 rounded-lg">
+                    Join Now
+                </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <h3 class="text-2xl font-bold text-gray-800">
+                    Premium
+                </h3>
+                <p class="text-3xl font-bold text-orange-500 my-4">
+                    1999
+                </p>
+                <p class="text-gray-800 mb-6">
+                    Per Month
+                </p>
+                <button class="bg-orange-700 text-white px-5 py-2 rounded-lg">
+                    Join Now
+                </button>
+            </div>          
+        </div>
+    </section>
+    <section id="Contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <form class="contact-form">
+
+            <label>Name:</label>
+            <input type="text"  id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z ]+">
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label>Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter 10 digit phone number" required pattern="[0-9]{10}">
+
+            <label>Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            <button>Submit</button>
+        </form>
+    </section>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:text-row justify-between items-center gap-8">
+
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold text-orange-500">
+                        FITLIFE
+                    </h2>
+
+                    <p class="text-gray-400 mt-2">
+                        © 2026 FitLife Gym. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-bold text-orange-500 mb-3">
+                        Quick Links
+                    </h3>
+                    <div class="flex gap-5">
+                        <a href="#home" class="text-gray-400 hover:text-orange-500 transition">
+                            Home
+                        </a>
+                        <a href="#About" class="text-gray-400 hover:text-orange-500 transition">
+                            About
+                        </a>
+                        <a href="#plans" class="text-gray-400 hover:text-orange-500 transition">
+                            Plans
+                        </a>
+                        <a href="#contact" class="text-gray-400 hover:text-orange-500 transition">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl font-bold text-orange-500 mb-3">
+                        Follow us
+                    </h3>
+                    <div class="flex justify-center gap-5">
+
+                        <a href="#" class="text-gray-400 text-2xl hover:text-orange-500 transition">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 text-2xl hover:text-orange-500 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 text-2xl hover:text-orange-500 transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+
+                <p class="text-gray-500 text-sm">
+                    Build Your Strength • Improve your Health • Live Better
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

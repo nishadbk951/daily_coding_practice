@@ -1,0 +1,69 @@
+.container{
+  max-width: 1600px;
+  margin: 0 auto;  
+}
+.navbar{
+    display: flex;
+    justify-content:flex-end;
+
+}
+.menu-items{
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    gap: 43px ;
+}
+.menu-items li a{
+    text-decoration: none;
+    color: black;
+}
+.details{
+    text-align: center;
+}
+.details button{
+    color: black;
+    background-color: beige;
+}
+#hero{
+    background-color:burlywood;
+}
+.hero-section{
+    padding: 50px;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    left: 150px;
+    padding: 20px;
+}
+#about{
+    background-color: aquamarine;
+}
+.about-section{
+    text-align: center;
+}
+.service-items{
+    background-color:bisque;
+}
+.service-row1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.service-row2{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    max-width: 420px;
+    min-height: 200px;
+}
+@media screen and(min-width:768px){
+    .menu-items{
+        flex-direction: row;
+        justify-content: center;
+    }
+}

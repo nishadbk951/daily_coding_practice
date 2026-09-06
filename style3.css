@@ -1,0 +1,99 @@
+/* Universal selector */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin gothic meduiam',arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+
+    background-color: bisque;
+
+    background-image:url('img.jpg');
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+h1 {
+    color:blue;
+
+    text-align: center;
+
+    text-decoration: underline;
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+
+}
+#main-heading {
+
+    color: azure;
+
+    background-color: blue;
+
+    padding: 15px;
+
+    text-decoration: line-through;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+.para {
+
+    color: rgb(70, 52, 183);
+
+    font-size: 20px;
+
+    line-height: 30px;
+
+    letter-spacing: 1px;
+
+    word-spacing: 5px;
+
+    margin-bottom: 15px;
+
+}
+div,
+h3 {
+    color:brown;
+
+    font-size: 30px;
+
+    font-style: italic;
+
+    font-weight: bold;
+
+}
+.box {
+    width: 400px;
+
+    background-color: rgba(129, 151, 97, 0.73);
+
+    border-width: 5px;
+
+    border-style: double;
+
+    border-color: chartreuse;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+} 
+.box {
+    border-top: 5px solid blue;
+
+    border-right: 5px dashed green;
+
+    border-bottom: 5 px dotted red;
+
+    border-left: 5px double black;
+}

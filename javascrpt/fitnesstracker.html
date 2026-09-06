@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <form id="form">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label>Excesise:</label>
+        <input type="text" id="exise">
+        <br><br>
+        <label>Sets</label>
+        <input type="number" id="sets">
+        <br><br>
+        <label>Reps:</label>
+        <input type="number" id="reps">
+        <br><br>
+        <label>Date:</label>
+        <input type="date" id="date">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <ul id="list">
+
+    </ul>
+    
+</body>
+<script>
+    
+let form = document.getElementById('form');
+let nameInput = document.getElementById("name")
+let exerciseInput = document.getElementById('exise');
+let setsInput = document.getElementById('sets');
+let repsInput = document.getElementById('reps');
+let dateInput = document.getElementById('date');
+let workoutList = document.getElementById('list');
+
+form.addEventListener('submit', function(e) {
+     e.preventDefault(); 
+
+     let Name = nameInput.value;
+     let Exise = exerciseInput.value;
+     let Sets = setsInput.value;
+     let Reps = repsInput.value;
+     let Date = dateInput.value;
+
+     let li = document.createElement('li');
+    
+     li.innerHTML = "NAME: " + Name + "<br>" +
+                   "Exercise: " + Exise + "<br>" +
+                   "Sets: " + Sets + "<br>" +
+                   "Reps: " + Reps + "<br>" +
+                   "Date: " + Date + "<br>" ;
+
+     let updatebutton = document.createElement("button");
+     updatebutton.textContent = "update";
+     
+     updatebutton.addEventListener("click",function(e){
+        e.preventDefault();
+        
+
+     })
+
+     let DeleteButton = document.createElement("button");
+     DeleteButton.textContent = "delete";
+
+     DeleteButton.addEventListener("click",function(e){
+        e.preventDefault();
+        li.remove();
+     })
+     li.appendChild(DeleteButton);
+     li.appendChild(updatebutton);
+
+
+     workoutList.appendChild(li);
+     form.reset();
+});
+</script>
+</html>

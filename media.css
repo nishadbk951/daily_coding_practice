@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: rgb(211, 102, 102);
+    line-height: 1.6;
+    background: linear-gradient(to right,);
+}
+/* header */
+header{
+    background-color: rgb(184, 184, 19);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* navigation */
+nav{
+    background-color: rgb(65, 195, 195);
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.nav-links li{
+    text-align: center;
+}
+.nav-links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.nav-links a:hover{
+    background-color: rgb(199, 190, 190);
+}
+/* hero section */
+.hero{
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero h2{
+    margin-bottom: 15px;
+}
+/* cards container */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.732);
+}
+.card h3{
+    margin-bottom: 10px;
+}
+/* footer */
+footer{
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* ===================
+    tablet breakpoint
+    min-width:768px
+    ==================== */
+@media screen and (min-width: 768px){
+    .nav-links{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card{
+        flex: 1 1 45%;
+    }
+    body{
+        background-color: white;
+    }
+}
+/* =====================
+    desktop breakpoint  
+    min-width:1024
+   ====================*/
+@media screen and (min-width: 1024px){
+    .container{
+        flex-wrap: nowrap;
+    }
+    .card{
+        flex: 1;
+    }
+    body{
+        background-color: rgb(255, 109, 238);
+    }
+    .hero h2{
+        font-size: 36px;
+    }
+}
+/* ====================
+    max-width example
+   =================== */
+@media screen and (max-width: 480px){
+    header h1{
+        font-size: 24px
+    }
+    .hero h2{
+        font-size: 22px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    body{
+        background-color: rgb(222, 149, 76);
+    }
+}
+/* @media (condition) {
+body {
+    background-color: blanchedalmond;
+}
+ } */
+
+
+ /* mobile - 480px
+ tablet - 768px
+ smaller laptop - 1024px
+ desktop - 1200 */

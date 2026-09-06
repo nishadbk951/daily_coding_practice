@@ -1,0 +1,51 @@
+/* Variable  */
+$primary-color: blue;
+$text-color: white;
+
+/* Mixin */
+@mixin button-style {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+[type="text"] {
+  border: 2px solid $primary-color;
+  padding: 8px;
+}
+
+[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+[href$=".pdf"] {
+  color: red;
+}
+
+/* Nesting */
+nav {
+  background-color: #333;
+  padding: 10px;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 15px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Using Mixin */
+.btn {
+  @include button-style;
+}

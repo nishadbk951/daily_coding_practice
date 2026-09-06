@@ -1,0 +1,34 @@
+/* 1.AUTO-FIT */
+
+.container4{
+    display: grid;
+    background-color: blue;
+    grid-template-columns:
+    repeat(AUTO-FIT,minmax(400px,1fr)) ;
+    gap: 20px;
+}
+/*
+auto-fit
+automatically adjusts columns
+
+minmax(200px,1fr)
+minimum width 200px
+maximum width equal space
+*/
+/* 2.AUTO-FILL */
+
+.container5{
+    display: grid;
+    background-color: blue;
+    grid-template-columns:
+    repeat(AUTO-FILL, minmax(200px,1fr));
+    gap: 20px;
+}
+/*
+auto-fill
+Creates maximum possible columns
+
+Difference from auto-fit:
+auto-fill keeps empty columns
+auto-fit stretches items
+*/

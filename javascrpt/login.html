@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label>Email</label>
+    <input type="text" id="email">
+    <p id="emailError" class="error"></p>
+    <label>password</label>
+    <input type="password" id="password">
+    <p id="passwordError" class="error"></p>
+    <button type="submit">Login</button>
+  </form>
+  <p id="successMessage" class="success"></p>
+  <script>
+    let form = document.getElementById("loginForm");
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value;
+
+      let emailError = document.getElementById("emailError");
+      let passwordError = document.getElementById("passwordError");
+
+      let successMessage = document.getElementById("successMessage");
+      // clear previous messages
+      emailError.textContent = "";
+      passwordError.textContent = "";
+      successMessage.textContent = "";
+
+       isValid = true;
+      // Email validation
+      if (email === ""){
+        emailError.textContent = "Email is required";
+        isValid = false;
+      }
+      
+      if(password === ""){
+        passwordError.textContent = "Password is required";
+        isValid = false;
+      }
+
+      if(!isValid){
+        return;
+      }
+      // get registered user
+      let storedUser = localStorage.getItem("user");
+      if (storedUser === null){
+        emailError.textContent = "No registered user found. please register first.";
+        return;
+      }
+      // convert JSON string to object
+      let user = JSON.parse(storedUser);
+      // check emailand password
+      if(email === user.email && password === user.password){
+        successMessage.textContent = "Login successful!";
+        // store login status
+        localStorage.setItem("isLoggedIn", "true");
+        // navigate to home
+        setTimeout(() =>{
+          window.location.href = "home.html";
+        },1000);
+      }
+      else{
+        passwordError.textContent = "Invalid email or password";
+      }
+    })
+  </script>
+
+  
+</body>
+</html>

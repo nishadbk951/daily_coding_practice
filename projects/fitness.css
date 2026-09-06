@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(70, 72, 72);
+}
+.program-section{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font-style: oblique;
+}
+.program-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+.program-image{
+    overflow: hidden;
+}
+.program-image img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgb(218, 194, 163);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgb(167, 112, 39);
+}
+.card:hover .program-image img{
+    transform: scale(1.1);
+}
+.program.content{
+    padding: 20px;
+}
+.program-content h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.program-content p{
+    color: brown;
+}
+.program-content button{
+    background:black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.program-content button:hover{
+    background:orangered;
+}
+.contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.contact-form {
+    display: flex;
+    gap: 10px;
+}
+.contact-form label{
+    font-weight: bold;
+}
+.contact-form button{
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background: darkorange;
+}

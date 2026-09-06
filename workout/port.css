@@ -1,0 +1,56 @@
+.head{
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+}
+.navbar{
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+}
+.item{
+    color: white;
+    justify-content:flex-end;
+    display: flex;
+    gap: 40px;
+}
+.navbar h3{
+    color: white;
+    font-size: 28px;
+}
+.hero{
+    margin: 20px;
+    
+}
+.hero-contain{
+    justify-content:center;
+    display: flex;
+}
+.details{
+    text-align: center;
+    
+}
+.details h2{
+    font-size: 30px;
+}
+.details h3{
+    font-size: 28px;
+}
+.details p{
+    font-size: 28px;
+}
+.details button{
+    background-color:brown;
+    cursor: pointer;
+    padding: 10px 5px;
+    gap: 10px;
+    border: 2px solid;
+    margin-top: 10px;
+}
+.image1 img{
+    width: 320px;
+    height: 280px;
+    border: 2px solid;
+}
+
+

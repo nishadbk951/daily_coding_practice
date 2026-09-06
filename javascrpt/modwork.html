@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="modework.js" defer></script>
+    <link rel="stylesheet" href="modwork.css">
+</head>
+<script>
+</script>
+<body>
+    <!-- <h1 id="title">WELCOME</h1>
+    <p id="message">hellooo nishad</p>
+    <p id="text"></p> -->
+    <!-- <p class="text">helloo nishad</p> -->
+    <p id="color">good morning</p>
+    <!-- <p class="text">hyy</p>
+    <p class="text">helo</p> -->
+
+    <!-- <p class="name">John</p>
+    <p class="name">David</p>
+    <p class="name">alex</p>
+
+    <ul id="new"> -->
+        <button id="btn">add style</button>
+
+    </ul>
+    
+</body>
+<script>
+    // document.getElementById("message").innerHTML = "good morning";
+    // document.getElementById("text").textContent = "<b>Hello students</b>";
+    // document.getElementById("text").innerHTML = "<b>Hello students</b>";
+
+    // let p = document.querySelector(".text");
+    // console.log(p);
+    // let allp = document.querySelectorAll(".text");
+    // console.log(allp);
+
+    // let Allname = document.querySelectorAll(".name");
+    // console.log(Allname);
+
+    // let create = document.createElement("span")
+    // create.textContent = "hello javascript";
+
+    // let heading = document.createElement("h2")
+    // heading.textContent = " this is dynamic";
+    // document.body.appendChild("heading");
+
+    // let button = document.createElement("button")
+    // button.textContent = "submit";
+    // document.body.appendChild(button);
+
+    // let li = document.createElement("li")
+    // li.textContent = "new item";
+    // document.getElementById("new").appendChild(li);
+
+    // let color = document.querySelector(".text");
+    // color.classList.add("highlight");
+
+    let button = document.getElementById("btn");
+    button.addEventListener("click",function(e){
+        e.preventDefault();
+        let newcolor = document.getElementById("color")
+        // newcolor.classList.add("addbutton")
+        // newcolor.classList.remove("addbutton")
+        newcolor.classList.toggle("addbutton")
+    });
+
+
+
+
+
+    
+
+
+</script>

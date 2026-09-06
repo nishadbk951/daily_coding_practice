@@ -1,0 +1,107 @@
+/* 
+GENERAL PAGE STYLING
+*/
+
+body{
+    font-family: arial,sans-serif;
+    margin: 30px;
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+    color:darkblue;
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+h2{
+    color: darkred;
+}
+
+/*
+PSEUDO CLASSES
+*/
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color:purple;
+}
+
+a:hover{
+    color:red;
+    font-size: 20px;
+}
+
+a:active{
+    color:green;
+}
+
+
+input:focus{
+    background-color: lightyellow;
+    border: 3px solid orange;
+    outline: none;
+}
+
+/*
+PSEUDO ELEMENTS
+*/
+
+.before-example::before{
+    content: "*#";
+    color: red;
+    font-size: 20px;
+}
+
+.after-example::after{
+    content: "+";
+    color: green;
+}
+
+.first-letter-example::first-letter{
+    font-size: 35px;
+    color: blue;
+    font-weight: bold;
+}
+
+.first-line-example::first-line{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+
+/*
+COMBINATORS
+*/
+
+.descendant div p{
+    color: red;
+}
+
+.child > p{
+    color: blue;
+}
+
+.adjacent h3 + p{
+    color: green;
+}
+
+.general h3 ~ p{
+    color: orange;
+}
+.about-head{}

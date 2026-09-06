@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+}
+h1 {
+    color: crimson;
+    text-align: center;
+    
+    
+}
+
+#paragraph {
+    color: blueviolet;
+    font-size: 30px;
+}
+
+.paragraph2 {
+    color: brown;
+}

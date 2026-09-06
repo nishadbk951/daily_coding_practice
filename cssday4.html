@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleday4.css">
+</head>
+<body>
+    <h1>CSS day 4</h1>
+    <h1>pseudo classes, pseudo Elements & combinators</h1>
+    <section>
+    <h2>pseudo classes</h2>
+    <h3>Hover, Active, Link, Visited</h3>
+    <a href="https://google.com">Visit Google</a><br><br>
+    <br><br>
+    <h3>Focus Example</h3>
+    <input type="text" placeholder="Enter your name">
+    </section>
+    <section>
+        <h2>pseudo Elements</h2>
+        <p class="before-example">this paragraph uses ::before</p>
+        <p class="after-example">this paragraph uses ::after</p>
+        <p class="first-letter-example">This paragraph uses ::first-letter pseudo element.</p>
+        <p class="first-line-example">lorem ipsum dolon-sit amet consectetur adipicing elit.<br>
+        Tempora labora reiciendis molestias, architecto liberoeveniet accusantium nemo placeat.</p>
+        <p>Select this text using mouse to see ::selection effect.</p>
+    </section>
+    <section class="descendant">
+        <h2>Descendant Selector (space)</h2>
+        <div>
+            <p>this paragraph is inside div</p>
+            <article>
+                <p>this paragraph is also inside divthrough article</p>
+            </article>
+        </div>
+    </section>
+    <section class="child">
+        <h2>Child selector(>)</h2>
+        <p>Direct child paragraph</p>
+        <div>
+            <p>this paragraph is inside div so child selector will not affect</p>
+        </div>
+    </section>
+    <section class="adjacent">
+        <h2>adjacent sibiling selector (+)</h2>
+        <h3>Heading</h3>
+        <p>this paragraph comes immediately after h3</p>
+        <p>this paragraph will not get style</p>
+    </section>
+    <section class="general">
+        <h2>General sibiling selector (~)</h2>
+        <h3>Heading</h3>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <div>
+            <p>paragraph inside div</p>
+        </div>
+    </section>
+</body>
+</html>

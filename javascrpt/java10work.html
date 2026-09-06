@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text_style {
+            background-color: green;
+            color: white;
+        }
+    </style>    
+</head>
+<body>
+    <h1 id="heading">SPORTS</h1>
+    <p id="textcontent">helloooo</p>
+    <p id="add">hiiii</p>
+    <p id="demo">good morning</p>
+    <ul id="list">
+        <li>messi</li>
+        <li>ronaldo</li>
+        <li>neymar</li>
+    </ul>
+
+    
+</body>
+<script>
+    let sp = document.getElementById("heading");
+    sp.innerHTML = 'sports news'
+
+    document.getElementById("textcontent").textContent = 'python';
+
+    let para =document.querySelector("#add");
+    para.classList.add("text_style");
+    //para.classList.toggle("text_style");
+
+    let button = document.createElement("button");
+    button.textContent = "submit"
+    console.log(heading)
+
+    document.body.appendChild(button);
+
+    let list = document.getElementById("list");
+    let item = list.children[1];
+    list.removeChild(item)
+
+    let p = document.querySelector("p");
+
+    document.getElementById("demo").innerHTML = "<i>welcome</i>";
+
+
+
+
+
+
+
+</script>
+</html>

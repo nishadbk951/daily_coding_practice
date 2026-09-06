@@ -1,0 +1,41 @@
+/* Attribute Selector: type="text" */
+[type="text"] {
+  border: 2px solid blue;
+  padding: 8px;
+}
+
+[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+[href$=".pdf"] {
+  color: red;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}

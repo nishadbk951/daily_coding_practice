@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-item">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>       
+    </nav>
+    <section class="form">
+        <div class="card">
+            <h2>REGISTRATION (SIGN UP)</h2>
+            <form class="reg-form" id="registrationForm">               
+                <label>NAME:</label>
+                <input type="text" id="name" placeholder="full name"  pattern="[A-Za-z ]+">              
+                <label>EMAIL:</label>
+                <input type="email" id="email" required>               
+                <label>PHONE NUMBER</label>
+                <input type="tel" id="number" pattern="[0-9]{10}" required>             
+                <label>CREATE PASSWORD:</label>
+                <input type="password" id="password" required minlength="6">              
+                <button id="regbutton">REGISTER</button>
+            </form>            
+        </div>
+    </section>
+    <section class="login">
+        <div class="login-form">
+            <h2>LOGIN</h2>
+            <form class="login-item" id="Login">
+                <label>Email or Phone number:</label>
+                <input type="text" id="username"  required pattern="[0-9]{10}|.+@.+\..+">
+                <label>PASSWORD:</label>
+                <input type="password" id="loginpassword" required minlength="6">
+                <button id="logbutton">LOGIN</button>
+            </form>
+        </div>
+    </section>
+
+    
+</body>
+<script>
+    let Registration = document.getElementById("registrationForm");
+    let button = document.getElementById("regbutton");
+
+    button.addEventListener("click",function(e){
+        e.preventDefault();
+        if(Registration.checkValidity()){
+            console.log("Registration success full")
+            let Name = document.getElementById("name");
+            let Email = document.getElementById("email");
+            let Pnumber = document.getElementById("number");
+            let Password = document.getElementById("password");
+
+            localStorage.setItem("savename",Name.value);
+            localStorage.setItem("saveemail",Email.value)
+            localStorage.setItem("savenumber",Pnumber.value);
+            localStorage.setItem("savepassword",Password.value);
+
+
+            console.log("NAME:",Name.value);
+            console.log("EMAIL:",Email.value);
+            console.log("Phone Number:",Pnumber.value);
+            console.log("PASSWORD:",Password.value);
+
+        }else{
+            console.log("Registration Failed")
+        }
+    })
+
+    let LOGin = document.getElementById("Login")
+    let Lbutton = document.getElementById("logbutton");
+
+    Lbutton.addEventListener("click",function(e){
+        e.preventDefault();
+        
+
+        if(LOGin.checkValidity()){
+            let USERname = document.getElementById("username");
+            let PASSword = document.getElementById("loginpassword");
+            console.log("USERNAME:",USERname.input);
+            console.log("PASSWORD:",PASSword.input);
+        }else{
+            console.log("Login Failed");
+        }
+
+    })
+</script>
+</html>

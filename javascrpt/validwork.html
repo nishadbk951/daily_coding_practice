@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error-line{
+            text-decoration: underline wavy red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label>Email:</label>
+        <input type="text" id="email">
+        <br><br>
+        <label>Phone Number:</label>
+        <input type="tel" id="phone">
+        <br><br>
+        <label>Password:</label>
+        <input type="password" id="password">
+        <button type="submit">submit</button>
+    </form>
+    
+</body>
+<script>
+    let Form = document.getElementById("form");
+
+    Form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let Namepattern = /^[A-Za-z]+(?:[ '-][A-Za-z]+)*$/;
+        let Name = document.getElementById("name");
+        let isNameValid = Namepattern.test(Name.value);
+        console.log("NAME:",isNameValid);
+        if(!isNameValid){
+            Name.classList.add("error-line");
+        }else{
+            Name.classList.remove("error-line");
+        }
+
+        let Emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let Email = document.getElementById("email");
+        let isEmailValid = Emailpattern.test(Email.value);
+        console.log("Email:",isEmailValid);
+        if(!isEmailValid){
+            Email.classList.add("error-line");
+        }else{
+            Email.classList.remove("error-line");
+        }
+
+        let Phonepattern = /^[6-9]\d{9}$/;
+        let Phone = document.getElementById("phone");
+        let isPhoneValid = Phonepattern.test(Phone.value);
+        console.log("Phone Number:",isPhoneValid);
+        if(!isPhoneValid){
+            Phone.classList.add("error-line");
+        }else{
+            Phone.classList.remove("error-line");
+        }
+
+        let Passpattern = /^(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        let Password = document.getElementById("password");
+        let isPasswordValid = Passpattern.test(Password.value);
+        console.log("Password:",isPasswordValid);
+        if(!isPasswordValid){
+            Password.classList.add("error-line");
+        }else{
+            Password.classList.remove("error-line");
+        }
+
+    });
+</script>
+</html>

@@ -1,0 +1,87 @@
+.hero{
+    margin-top: 20px;
+}
+.hero1{
+    text-align: center;
+}
+.image{
+    justify-content: center;
+}
+.image img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.program{
+    margin-top: 20px;
+    text-align: center;
+}
+.program1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.card{
+    width: 280px;
+    height: 240px;
+    border-radius: 10px;
+    border: 2px solid;
+    justify-content: center;
+    background-color: brown;
+    transition: 0.5;
+    box-shadow: 2px;
+}
+.card h3{
+    font-size: 32px;
+}
+.card:hover{
+    background-color: blueviolet;
+}
+.membership{
+    text-align: center;
+    margin-top: 25px;
+}
+.membership1{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.card1{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid;
+    justify-content: center;
+
+}
+.contact{
+    margin-top: 10px;
+}
+.details h2{
+    text-align: center;
+    
+}
+.details{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.footer{
+    background-color: blueviolet;
+}
+.foot{
+    text-align: center;
+}
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+.foot a:hover{
+    background-color: green;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1 id="welcomeMessage"></h1>
+    <p>Welcome to Home Page!</p>
+    <button id="logoutBtn">Logout</button>
+    <script>
+        let isLoggedIn = localStorage.getItem("isLoggedIn");
+        if(isLoggedIn !== "true"){
+            // user is not logged in
+            window.location.href = "login.html";
+        }
+        else{
+            // get user details 
+            let storedUser = localStorage.getItem("user");
+            let user = JSON.parse(storedUser);
+            document.getElementById("welcomeMessage").textContent = "Welcome," + user.name + "!";
+        }
+        // Logout
+        document.getElementById("logoutBtn").addEventListener("click", ()=>{
+            localStorage.removeItem("isLoggedIn");
+            // go back to login
+            window.location.href = "login.html";
+        });
+    </script>
+    
+</body>
+</html>

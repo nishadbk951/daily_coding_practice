@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+        width: 220px;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /* STATIC POSITION */
+    .static-box{
+        position: static;
+        background-color: gray;
+    }
+    /* RELATIVE POSITION */
+    .relative-box{
+        position: relative;
+        top: 20px;
+        left: 40px;
+        background-color: blue;
+
+    }
+    /* ABSOLUTE POSITION */
+    .container{
+        position: relative;
+        height: 250px;
+        border: 3px solid black;
+        margin: 20px;
+    }
+    .absolute-box{
+        position: absolute;
+        top: 50px;
+        left: 80px;
+        background-color: red;
+    }
+      /* FIXED POSITION */
+    .fixed-box{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: green;
+        z-index: 1000;
+    } 
+       /* STICKY POSITION */
+    .sticky-box{
+        position: sticky;
+        top: 0;
+        background-color: orange;
+        padding: 15px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    } 
+
+       /* CONTENT AREA */
+    .content{
+        height: 1200px;
+        padding: 20px;
+    }       
+    
+</style>
+</head>
+<body>
+    <!--STICKY POSITION-->
+    <div class="sticky-box">
+        sticky Header
+    </div>
+    <!--STATIC POSITION-->
+    <div class="box static-box">
+        static position
+    </div>
+    <!--RELATIVE POSITION-->
+    <div class="box relative-box">
+        Relative position
+    </div>
+    <!--ABSOLUTE POSITION-->
+    <div class="container">
+        <div class="box absolute-box">
+            absolute position
+        </div>
+    </div>
+    <!--PAGE CONTENT-->
+    <div class="content">
+        <h2>Scroll Down</h2>
+        <p>
+            This page demonstrates all CSS position properties:
+            static,relative,absolute,fixed, and sticky.
+        </p>
+        <p>
+            keep scrolling to observe sticky and fixed behaviors.
+        </p>
+    </div>
+    <!--FIXED POSITION-->
+    <div class="box fixed-box">
+        Fixed button
+    </div>
+
+</body>
+    
+
+</html>

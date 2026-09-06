@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: chartreuse;
+    font-size: 30px;
+    text-align: center;
+}
+
+#paragraph {
+    color: brown;
+}
+
+#paragraph2 {
+    color: blue;
+}
+
+.paragraph3 {
+    color: blueviolet;
+}
